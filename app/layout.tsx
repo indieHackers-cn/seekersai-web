@@ -46,7 +46,7 @@ export default function RootLayout({
 }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className="bg-black loading">
+      <body className="bg-gradient-to-r from-zinc-200 to-cyan-500 loading">
         <SupabaseProvider>
           {/* @ts-expect-error */}
           <Navbar />

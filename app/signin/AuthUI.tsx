@@ -19,13 +19,16 @@ export default function AuthUI() {
           variables: {
             default: {
               colors: {
-                brand: '#404040',
-                brandAccent: '#52525b'
+                brand: 'zinc-300',
+                brandAccent: 'zinc-300',
+                inputLabelText: 'black',
+                inputPlaceholder: '#71717A',
+                anchorTextColor: 'black'
               }
             }
           }
         }}
-        theme="dark"
+        theme="light"
       />
     </div>
   );

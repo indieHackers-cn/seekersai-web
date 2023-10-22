@@ -18,7 +18,7 @@ export default async function Navbar() {
         Skip to content
       </a>
       <div className="max-w-6xl px-6 mx-auto">
-        <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
+        <div className="relative flex flex-row justify-between py-4 align-center md:py-5">
           <div className="flex items-center flex-1">
             <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
@@ -39,7 +39,9 @@ export default async function Navbar() {
               <SignOutButton />
             ) : (
               <Link href="/signin" className={s.link}>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Sign in
+                </button>
               </Link>
             )}
           </div>

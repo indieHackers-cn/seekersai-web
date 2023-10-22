@@ -3,7 +3,7 @@
 import { useSupabase } from '@/app/supabase-provider';
 import { useRouter } from 'next/navigation';
 
-export default function SignOutButton() {
+export default function AccountButton() {
   const router = useRouter();
   const { supabase } = useSupabase();
   const handleSignOut = async () => {
