@@ -64,15 +64,15 @@ enable_confirmations = true
 [auth.external.apple]
 enabled = true
 client_id = "42e83c8015458ebe83cd"
-secret = "b3a2c26aa7db16aa41b651df76c0f7a3ef372380"
+secret = "ecb3feca8d6ceaa60c69698725138a0c577fda8e"
 # Overrides the default auth redirectUrl.
 redirect_uri = "https://vwsqqoxskpjeqpejuupd.supabase.co/auth/v1/callback"
 # Overrides the default auth provider URL. Used to support self-hosted gitlab, single-tenant Azure,
 # or any other third-party OIDC providers.
 url = ""
 [auth.external.apple]
-client_id = "1068479972686-8gmkkgh4q818d4qnk9sl32upnpp5hf7o.apps.googleusercontent.com"
-secret = "1068479972686-8gmkkgh4q818d4qnk9sl32upnpp5hf7o.apps.googleusercontent.com"
+client_id = "1068479972686-6s1pd9sjmfpuaclcc3v4mfmtgjvha5to.apps.googleusercontent.com"
+secret = "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"
 # Overrides the default auth redirectUrl.
 redirect_uri = "https://vwsqqoxskpjeqpejuupd.supabase.co/auth/v1/callback"
 # Overrides the default auth provider URL. Used to support self-hosted gitlab, single-tenant Azure,

@@ -6,7 +6,7 @@ import 'styles/main.css';
 
 const meta = {
   title: 'seekersai.com',
-  description: 'resume accompany me, job will follow me By seekai.',
+  description: 'resume accompany me, job will follow me By seekersai.',
   cardImage: '/og.png',
   robots: 'follow, index',
   favicon: '/favicon.ico',
