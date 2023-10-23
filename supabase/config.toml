@@ -70,6 +70,14 @@ redirect_uri = "https://vwsqqoxskpjeqpejuupd.supabase.co/auth/v1/callback"
 # Overrides the default auth provider URL. Used to support self-hosted gitlab, single-tenant Azure,
 # or any other third-party OIDC providers.
 url = ""
+[auth.external.apple]
+client_id = "1068479972686-8gmkkgh4q818d4qnk9sl32upnpp5hf7o.apps.googleusercontent.com"
+secret = "1068479972686-8gmkkgh4q818d4qnk9sl32upnpp5hf7o.apps.googleusercontent.com"
+# Overrides the default auth redirectUrl.
+redirect_uri = "https://vwsqqoxskpjeqpejuupd.supabase.co/auth/v1/callback"
+# Overrides the default auth provider URL. Used to support self-hosted gitlab, single-tenant Azure,
+# or any other third-party OIDC providers.
+url = ""
 
 [analytics]
 enabled = false

@@ -5,7 +5,7 @@ import { PropsWithChildren } from 'react';
 import 'styles/main.css';
 
 const meta = {
-  title: 'seekerai.com',
+  title: 'seekersai.com',
   description: 'resume accompany me, job will follow me By seekai.',
   cardImage: '/og.png',
   robots: 'follow, index',

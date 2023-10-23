@@ -15,7 +15,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              By seekai
+              By seekersai
             </a>
             .
           </p>
