@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import Logo from '@/components/icons/Logo';
 import GitHub from '@/components/icons/GitHub';
+import Twitter from '@/components/icons/Twitter';
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
             <span className="mr-2 border rounded-full border-zinc-700">
               <Logo />
             </span>
-            <span>ACME</span>
+            <span>SEEKERSAI</span>
           </Link>
         </div>
         <div className="col-span-1 lg:col-span-2">
@@ -83,9 +84,9 @@ export default function Footer() {
           <div className="flex items-center h-10 space-x-6">
             <a
               aria-label="Github Repository"
-              href="https://github.com/vercel/nextjs-subscription-payments"
+              href="https://twitter.com/hey2SK"
             >
-              <GitHub />
+              <Twitter />
             </a>
           </div>
         </div>
@@ -93,7 +94,7 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row bg-blue-600">
         <div>
           <span>
-            &copy; {new Date().getFullYear()} ACME, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Seekersai, Inc. All rights reserved.
           </span>
         </div>
         <div className="flex items-center">
