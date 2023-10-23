@@ -7,7 +7,7 @@ export default function Home() {
     <section className="bg-gradient-to-r from-zinc-200 to-cyan-500">
       <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center"></div>
-          <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+          <p className="text-8xl font-black text-black sm:text-center sm:text-6xl">
               resume accompany me, job will follow me{' '}
             <a
               className="text-pink-500 underline"
