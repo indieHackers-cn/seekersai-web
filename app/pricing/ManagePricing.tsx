@@ -31,7 +31,7 @@ interface Props {
 
 type BillingInterval = 'lifetime' | 'year' | 'month';
 
-export default function Pricing({
+export default function ManagePricing({
   session,
   user,
   products,
@@ -85,7 +85,7 @@ export default function Pricing({
               rel="noopener noreferrer"
               target="_blank"
             >
-              By seekai
+              Pricing
             </a>
             .
           </p>
