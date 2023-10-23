@@ -64,7 +64,7 @@ enable_confirmations = true
 [auth.external.apple]
 enabled = true
 client_id = "42e83c8015458ebe83cd"
-secret = "ecb3feca8d6ceaa60c69698725138a0c577fda8e"
+secret = "5fc484dc3a0795d3cb6eca9a215970041f61cc2e"
 # Overrides the default auth redirectUrl.
 redirect_uri = "https://vwsqqoxskpjeqpejuupd.supabase.co/auth/v1/callback"
 # Overrides the default auth provider URL. Used to support self-hosted gitlab, single-tenant Azure,
