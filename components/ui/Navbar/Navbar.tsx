@@ -23,12 +23,15 @@ export default async function Navbar() {
             <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
             </Link>
-            <nav className="hidden ml-6 space-x-2 lg:block">
+            <nav className="hidden ml-20 space-x-4 lg:block">
               <Link href="/features" className={s.link}>
                 Features
               </Link>
               <Link href="/apps" className={s.link}>
                 App
+              </Link>
+              <Link href="/blog" className={s.link}>
+                Blog
               </Link>
               <Link href="/pricing" className={s.link}>
                 Pricing

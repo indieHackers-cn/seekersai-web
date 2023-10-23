@@ -3,11 +3,11 @@
 }
 
 .link {
-  @apply inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer text-black rounded-md p-1;
+  @apply inline-flex items-center leading-6 font-black transition ease-in-out duration-75 cursor-pointer text-black rounded-md p-1;
 }
 
 .link:hover {
-  @apply text-zinc-100;
+  @apply text-sky-400;
 }
 
 .link:focus {
