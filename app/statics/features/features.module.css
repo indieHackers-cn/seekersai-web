@@ -1,0 +1,17 @@
+.featuresbox {
+  @apply transition-all duration-200 ease-in-out basis-[30%] border border-[rgb(255_251_235_/_var(--tw-border-opacity))] bg-[rgb(9_14_52_/_var(--tw-bg-opacity))] shadow-[var(--tw-ring-offset-shadow,0_0_#0000),var(--tw-ring-shadow,0_0_#0000),var(--tw-shadow)] mx-3 my-4 px-2 py-8 rounded-lg hover:shadow-[var(--tw-ring-offset-shadow,0_0_#0000),var(--tw-ring-shadow,0_0_#0000),var(--tw-shadow)];
+  --tw-border-opacity: 0.1;
+  --tw-bg-opacity: 0.1;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  --tw-shadow-color: #efefef4f;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.featuresbox:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  --tw-shadow-color: #efefef2f;
+  --tw-shadow: var(--tw-shadow-colored);
+}
