@@ -20,14 +20,11 @@ export default async function Navbar() {
       <div className="max-w-6xl px-6 mx-auto">
         <div className="relative flex flex-row justify-between py-4 align-center md:py-5">
           <div className="flex items-center flex-1">
-            <Link href="/" className={s.logo} aria-label="Logo">
+            <Link href="#" className={s.logo} aria-label="Logo">
               <Logo />
             </Link>
             <nav className="hidden ml-20 space-x-4 lg:block">
-              <Link href="/features" className={s.link}>
-                Features
-              </Link>
-              <Link href="/apps" className={s.link}>
+              <Link href="#apps" className={s.link}>
                 App
               </Link>
               <Link href="/blog" className={s.link}>

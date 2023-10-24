@@ -1,0 +1,42 @@
+.formInput {
+    @apply bg-white px-4 py-4 rounded-md outline-0 border border-transparent focus:border-sky-400 shadow-2xl text-white
+}
+
+.formLabel {
+    @apply text-neutral-900 dark:text-white font-bold mb-3
+}
+
+.input::-moz-placeholder{
+    @apply opacity-100 text-gray-500
+}
+
+.input::placeholder{
+    @apply opacity-100 text-gray-500
+}
+
+.textarea::-moz-placeholder{
+    @apply opacity-100 text-gray-500
+}
+
+.textarea::placeholder{
+    @apply opacity-100 text-gray-500
+}
+
+.btn {
+    @apply transition-all duration-200 ease-in-out text-base leading-6 font-bold capitalize text-[rgb(255_255_255_/_var(--tw-text-opacity))] no-underline m-1 px-8 py-3 rounded-md bg-opacity-100 text-opacity-100 bg-[#4a6cf7] opacity-90
+}
+.btn:hover{
+    @apply bg-opacity-90
+}
+
+.subscribeBtn{
+    @apply transition-all duration-200 ease-in-out text-base leading-6 font-bold capitalize text-[rgb(255_255_255_/_var(--tw-text-opacity))] no-underline m-1 px-8 rounded-md bg-opacity-100 text-opacity-100 bg-[#4a6cf7] opacity-90 py-3 block w-full border border-transparent
+}
+
+.subscribeBtn:hover{
+    @apply bg-opacity-90
+}
+
+.subscribeInput{
+    @apply block w-[100%] my-3 bg-white px-4 py-4 rounded-md outline-0 border border-transparent focus:border-sky-400 shadow-2xl text-white
+}

@@ -1,6 +1,7 @@
 'use client';
 
 import Features from '@/app/statics/features/pages'
+import Contact from '@/app/statics/contact/pages'
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
         </div>
         <LogoCloud />
         <Features />
+        <Contact />
     </section>
     );
 

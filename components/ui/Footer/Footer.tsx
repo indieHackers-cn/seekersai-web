@@ -21,6 +21,11 @@ export default function Footer() {
         </div>
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
+          <li className="py-3 md:py-0 md:pb-4">
+              <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+                Pages
+              </p>
+            </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
@@ -31,10 +36,10 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/"
+                href="#features"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
-                About
+                Features
               </Link>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
@@ -47,10 +52,10 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/"
+                href="#contact"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
-                Blog
+                Contact
               </Link>
             </li>
           </ul>
