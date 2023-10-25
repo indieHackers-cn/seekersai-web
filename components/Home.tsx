@@ -1,7 +1,7 @@
 'use client';
 
-import Features from '@/app/statics/features/pages'
-import Contact from '@/app/statics/contact/pages'
+import Features from '@/app/statics/features/page'
+import Contact from '@/app/statics/contact/page'
 
 export default function Home() {
 

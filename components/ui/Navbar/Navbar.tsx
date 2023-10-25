@@ -20,10 +20,11 @@ export default async function Navbar() {
       <div className="max-w-6xl px-6 mx-auto">
         <div className="relative flex flex-row justify-between py-4 align-center md:py-5">
           <div className="flex items-center flex-1">
-            <Link href="#" className={s.logo} aria-label="Logo">
+            <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
             </Link>
-            <nav className="hidden ml-20 space-x-4 lg:block">
+            <nav className="hidden ml-20 space-x-4 lg:block" id="nav-item">
+              {/* 这些将全部更新成新页面 */}
               <Link href="#apps" className={s.link}>
                 App
               </Link>
@@ -46,7 +47,7 @@ export default async function Navbar() {
             ) : (
               <Link href="/signin" className={s.link}>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                Sign in
+                  Sign in
                 </button>
               </Link>
             )}
