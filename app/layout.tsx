@@ -1,4 +1,3 @@
-import { createServerSupabaseClient } from '@/app/supabase-server';
 import SupabaseProvider from './supabase-provider';
 import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
@@ -39,29 +38,25 @@ export const metadata: Metadata = {
   }
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
   children
 }: PropsWithChildren) {
-  const supabase = createServerSupabaseClient();
-  const {
-    data: { user }
-  } = await supabase.auth.getUser();
 
   return (
     <html lang="en">
       <body className="bg-gradient-to-r from-zinc-200 to-cyan-500 loading">
         <SupabaseProvider>
           {/* @ts-expect-error */}
-          { !user && (<Navbar />)}
+          <Navbar />
           <main
             id="skip"
             className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
           >
             {children}
           </main>
-          { !user && (<Footer />)}
+          <Footer />
         </SupabaseProvider>
       </body>
     </html>
