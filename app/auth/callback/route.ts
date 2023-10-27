@@ -15,6 +15,5 @@ export async function GET(request: NextRequest) {
   }
 
   // URL to redirect to after sign in process completes
-  // return NextResponse.redirect(requestUrl.origin)
-  return NextResponse.redirect("https://app.seekersai.com/")
+  return NextResponse.redirect(requestUrl.origin)
 }
