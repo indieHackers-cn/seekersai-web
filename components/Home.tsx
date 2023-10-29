@@ -7,8 +7,8 @@ export default function Home() {
 
   return (
     <section className="bg-gradient-to-r from-zinc-200 to-cyan-500">
-      <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
-        <div className="sm:flex sm:flex-col sm:align-center"></div>
+      <div className="max-w-3xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+        <div className="flex items-center align-items sm:flex-col sm:align-center"></div>
           <p className="mt-4 text-center text-3xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem]">
               resume accompany me,
           </p>
@@ -22,6 +22,10 @@ export default function Home() {
             >
               By seekersai.
             </a>
+          </p>
+          <p className="mt-6 text-xl leading-8 font-normal text-zinc-700">
+            Upload the resume, typing the job, the best new remote jobs at 
+            leading companies and startups will pop up. 
           </p>
         </div>
         <LogoCloud />

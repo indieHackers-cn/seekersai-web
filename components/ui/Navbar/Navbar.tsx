@@ -35,13 +35,18 @@ export default async function Navbar() {
                 Pricing
               </Link>
               {user && (
-                <Link href="/account" className={s.link}>
-                  Account
+                <Link href="/create" className={s.link}>
+                  Create
                 </Link>
               )}
             </nav>
           </div>
           <div className="flex justify-end flex-1 space-x-8">
+              {/* {user && (
+                <Link href="/account" className={s.link}>
+                  Account
+                </Link>
+              )} */}
             {user ? (
               <SignOutButton />
             ) : (
