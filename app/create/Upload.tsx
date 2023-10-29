@@ -1,8 +1,3 @@
-import React from "react";
-// reactstrap components
-import { ListGroup, ListGroupItem, Row, Col, Button } from "reactstrap";
-// core components
-
 export default function Upload() {
   return (
     <div id="dropzone">
@@ -13,7 +8,7 @@ export default function Upload() {
   )
    
 }
-{/*   
+/*   
   // export default Example;
     //   <div className="flex items-center justify-start h-full">
     //     <label htmlFor="dropzone-file" className={w.uploadFile}>
@@ -26,4 +21,4 @@ export default function Upload() {
     //       </div>
     //       <input id="dropzone-file" type="file" className="hidden" />
     //   </label>
-    // </div>  */}
+    // </div>  */
