@@ -24,8 +24,8 @@ export default function Home() {
             </a>
           </p>
           <p className="mt-6 text-xl leading-8 font-normal text-zinc-700">
-            Upload the resume, typing the job, the best new remote jobs at 
-            leading companies and startups will pop up. 
+            Upload the resume, type the job, and 
+            the best new remote jobs for you at leading companies and startups will pop up.
           </p>
         </div>
         <LogoCloud />
