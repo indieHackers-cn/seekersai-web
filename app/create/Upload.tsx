@@ -21,14 +21,16 @@ export default function ResumeUpload({
   dropZoneLabel = "Or drag and drop file",
 }: FileUploadProps) {
 
-const { setFile } = useGlobalState();
+const { setUserID, setFile } = useGlobalState();
 
 const [fileName, setFileName] = useState<string>();
 const [isDragging, setIsDragging] = useState(false);
 
 const acceptedFileTypes = FILE_TYPES.join(", ");
 
+// 状态改变器
 function saveSelectedFileToState(file: File) {
+  setUserID(userID);
   setFileName(file.name);
   setFile(file);
 }
