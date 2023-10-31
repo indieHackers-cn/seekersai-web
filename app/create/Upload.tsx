@@ -62,7 +62,7 @@ function handleDragOver(e: React.DragEvent<HTMLDivElement>) {
 return (
   <div
     className={clsx(
-    "flex flex-col gap-4 p-6 border-2 border-dashed border-gray-600 rounded-lg",
+    "flex flex-col gap-4 p-6 border-2 border-dashed border-gray-300 rounded-lg",
     { "border-purple-100 opacity-50": isDragging }
     )}
     onDragOver={handleDragOver}
@@ -80,16 +80,16 @@ return (
       
     <label
       htmlFor="upload-btn"
-      className="block text-white text-4xl p-12 rounded-2xl cursor-pointer bg-gradient-to-r from-[#212234] to-[#1A2350]"
+      className="block text-black text-base p-12 rounded-2xl italic hover:not-italic cursor-pointer bg-gray-300"
     >
     
     {buttonLabel}
       </label>
-      <small className="text-center text-gray-300">
-        Accepted file type(s): {userID}
+      <small className="text-center text-black text-base">
+        Drag and drop files here...
       </small>
       {fileName ? (
-        <span className="block text-2xl text-center text-emerald-500">
+        <span className="block text-2xl text-center text-cyan-500">
           {fileName}
         </span>
       ) : (

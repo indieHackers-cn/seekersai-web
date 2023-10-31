@@ -2,13 +2,18 @@ import { create } from "zustand";
 
 type StoreGlobalState = {
   file: File | null;
+  text: string;
   setFile: (_file: File) => void;
+  setSearchBox: (_text: string) => void;
   enableInteration: () => void;
 };
 
 export const useGlobalState = create<StoreGlobalState>((set, get) => ({
+  // initiize request parameters
   file: null,
+  text: "",
   setFile: (file: File) => set({ file }),
+  setSearchBox: (text: string) => set({ text }),
   enableInteration: async () => {
     const { file } = get();
 
