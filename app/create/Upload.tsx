@@ -92,7 +92,7 @@ return (
       </small>
       {fileName ? (
         <span className="block text-2xl text-center text-cyan-500">
-          {fileName}
+          {fileName.slice(0,16)}...
         </span>
       ) : (
         <p className="block text-2xl text-center">{dropZoneLabel}</p>

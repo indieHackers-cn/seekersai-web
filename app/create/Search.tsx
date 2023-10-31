@@ -1,3 +1,4 @@
+import { useGlobalState } from "./ManageState";
 
 interface SearchJobProps{
     text: string;
@@ -8,7 +9,7 @@ export default function SearchJob({
 }: SearchJobProps ){
     return (
         <div>
-            
+
         </div>
     )
 }
