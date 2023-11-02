@@ -24,12 +24,12 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
   setUserID: (userID: string) => set({ userID }),
   setSearchBox: (text: string) => set({ text }),
   enableInteration: async () => {
-    const { file, userID, text, setSearchBox } = get();
+    const { file, userID, text } = get();
     
     try {
       // 开始交互, 方便加锁
       set({ isInteration: true });
-      set({ display: null })
+      set({ display: null }) ;
 
       const formData = new FormData();
       formData.append("user", userID);
@@ -40,13 +40,13 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
         method: "POST",
         body: formData,
       });
-
+      
       if (!response.ok) {
         throw new Error("Something has happened wrong: error" + response.statusText);
       }
 
       const result = (await response.json()) as SearchForJDResponse;
-      set({ display: result})
+      set({ display: result });
 
     } catch(error) {
       console.error(error);

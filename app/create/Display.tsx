@@ -26,14 +26,41 @@ import { useGlobalState } from './ManageState';
 // ]
 
 export default function Display() {
-    const { isInteration,  display } = useGlobalState();
+    const { isInteration, display } = useGlobalState();
 
-    // if ( isInteration || display == null )
-    //     return null
+    if ( isInteration || display == null )
+        return null
 
     
-
-    // const ExceptionMsg  = display?.ExceptionMsg;
+    const ExceptionMsg  = display?.ExceptionMsg;
+    if (ExceptionMsg) {
+        return (
+            <div id='no-hits' className='mx-auto max-w-3xl mt-0 h-full min-h-[50vh]'>
+              <div className='max-w-none prose md:prose-lg mt-12 px-4 sm:px-6 md:px-0 text-black text-left'>
+                <p className='md:text-lg font-bold mb-3'>
+                    No available Job currently.
+                    {/* { ExceptionMsg } */}
+                </p>
+                <p className='my-6'>Suggestions: </p>
+                <ul className='my-6 list-disc list-inside'>
+                  <li className='my-4 text-base'>
+                    Check your spelling
+                  </li>
+                  <li className='my-4 text-base'>
+                    Try using fewer, different, or more general keywords
+                  </li>
+                  <li className='my-4 text-base'>
+                    Stay up-to-date, and don't miss an opportunity by signing up for our newsletter
+                  </li>
+                </ul>
+                {/* <main className='w-full text-gray-500 text-bold'>
+                    { ExceptionMsg }
+                </main> */}
+              </div>
+            </div>
+        )
+    }
+    // 
     // console.log(display)
     
     // TODO: 迭代给出结论并展示
@@ -50,7 +77,7 @@ export default function Display() {
     return (
         <div className='sm:p-8 p-0 pr-0 grid grid-cols-1 gap-10 sm:mt-0 mt-10 place-items-center lg:grid-cols-1 lg:grid-rows-1'>
             <main className='w-full text-red-500 text-bold'>
-                Bang {String(isInteration)} {display?.ExceptionMsg} {JSON.stringify(display)}
+                Bang {String(isInteration)} {JSON.stringify(display)}
             </main>
         </div>
     )
