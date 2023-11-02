@@ -65,7 +65,7 @@ return (
   <div
     className={clsx(
     "flex flex-col gap-4 p-6 border-2 border-dashed border-gray-300 rounded-lg",
-    { "border-purple-100 opacity-50": isDragging }
+    { "border-gray-300 opacity-50": isDragging }
     )}
     onDragOver={handleDragOver}
     onDragLeave={() => setIsDragging(false)}
@@ -91,11 +91,11 @@ return (
         Drag and drop files here...
       </small>
       {fileName ? (
-        <span className="block text-2xl text-center text-cyan-500">
+        <small className="block text-lg text-center text-cyan-500">
           {fileName.slice(0,16)}...
-        </span>
+        </small>
       ) : (
-        <p className="block text-2xl text-center">{dropZoneLabel}</p>
+        <p className="block text-lg text-center">{dropZoneLabel}</p>
       )}
     </div>
   );

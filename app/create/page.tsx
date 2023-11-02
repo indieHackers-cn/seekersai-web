@@ -6,8 +6,10 @@ import {
 
 import { redirect } from 'next/navigation';
 import ResumeUpload from "./Upload";
-import c from './create.module.css';
+import SearchJob from './Search';
 
+import c from './create.module.css';
+import Display from './Display';
 
 
 export default async function Create() {
@@ -16,7 +18,7 @@ export default async function Create() {
     getUserDetails(),
     getSubscription()
   ]);
-    
+  
   const user = session?.user;
 
   if (!session) {
@@ -36,21 +38,25 @@ export default async function Create() {
               <div className={c.uploadFile}>
                   <ResumeUpload userID={user?.id} buttonLabel="Upload Your Resume" />
               </div>
+              <div className="font-bold text-xl text-black text-left pt-2 gap-3">Search Jobs:</div>
               <div className={c.searchJob}>
-
+                  <SearchJob />
               </div>
           </div>
           <div className="w-[-webkit-fill-available] px-3 md:mt-8 mt-0">
               <h1 className="mx-auto max-w-3xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5 hidden lg:block text-black">
-                get the 
+                get the
                 <span className="text-primary-70 text-cyan-500"> most suitable job </span>
                 in seconds
               </h1>
               <p className="text-gray-600 hidden lg:block text-lg">the available highest score job with your resume within reach</p>
+            <div>
+                <Display />
+            </div>
           </div>
           </main>
       </div>
     </div>
  
-    )
-}
+    );
+};
