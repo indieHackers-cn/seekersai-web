@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         mono: ['var(--font-roboto-mono)', ...fontFamily.mono],
+        poppins: ["var(--font-poppins)"],
       }
     }
   },

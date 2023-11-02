@@ -49,7 +49,7 @@ export default async function Create() {
                 <span className="text-primary-70 text-cyan-500"> most suitable job </span>
                 in seconds
               </h1>
-              <p className="text-gray-600 hidden lg:block text-lg">the available highest score job with your resume within reach</p>
+              <p className="text-gray-600 hidden lg:block text-lg font-poppins">the available highest score job with your resume within reach</p>
             <div>
                 <Display />
             </div>

@@ -23,7 +23,7 @@ export default function Home() {
               By seekersai.
             </a>
           </p>
-          <p className="mt-6 text-xl leading-8 font-normal text-zinc-700">
+          <p className="mt-6 text-xl leading-8 font-normal text-zinc-700 font-poppins">
             Upload the resume, type the job, and 
             the best new remote jobs for you at leading companies and startups will pop up.
           </p>
