@@ -99,7 +99,7 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row bg-blue-600">
         <div>
           <span>
-            &copy; {new Date().getFullYear()} Seekersai.com, All rights reserved.
+            &copy; {new Date().getFullYear()} Seekersai.com. All rights reserved.
           </span>
         </div>
       </div>
