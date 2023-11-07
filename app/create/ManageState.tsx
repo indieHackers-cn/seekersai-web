@@ -36,7 +36,7 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
       formData.append("resume", file as Blob);
       formData.append("job_title", text);
 
-      const response = await fetch("http://172.104.125.252:49880/api/remote-jobs-matcher", {
+      const response = await fetch("http://54.151.64.106:49880/api/remote-jobs-matcher", {
         method: "POST",
         body: formData,
       });
