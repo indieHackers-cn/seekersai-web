@@ -56,4 +56,4 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
   },
 }));
 
-const BACKEND_URL = process.env.SEEKERS_BACKEND_URL
+const BACKEND_URL = process.env.NEXT_PUBLIC_SEEKERS_BACKEND_URL
