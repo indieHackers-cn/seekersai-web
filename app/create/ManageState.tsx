@@ -25,7 +25,6 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
   setSearchBox: (text: string) => set({ text }),
   enableInteration: async () => {
     const { file, userID, text } = get();
-    
     try {
       // 开始交互, 方便加锁
       set({ isInteration: true });
@@ -36,7 +35,7 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
       formData.append("resume", file as Blob);
       formData.append("job_title", text);
 
-      const response = await fetch("${SEEKERS_BACKEND_URL}/api/remote-jobs-matcher", {
+      const response = await fetch(`${BACKEND_URL}/api/remote-jobs-matcher`, {
         method: "POST",
         body: formData,
       });
@@ -56,3 +55,5 @@ export const useGlobalState = create<StoreGlobalState>((set, get) => ({
     }
   },
 }));
+
+const BACKEND_URL = process.env.SEEKERS_BACKEND_URL
