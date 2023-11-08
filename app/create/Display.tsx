@@ -9,7 +9,42 @@ export default function Display() {
     const { isInteration, display } = useGlobalState();
 
     if ( isInteration || display == null )
-        return null
+      return (
+        <div id='origin' className='mx-auto max-w-3xl mt-0 h-full min-h-[50vh]'>
+          <div className='flex flex-wrap'>
+            <a href="#_" className="relative inline-flex items-center justify-center my-24 mx-20 px-8 py-6 font-bold text-black group">
+              <span className="absolute inset-0 w-32 h-32 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
+              <span className="absolute inset-0 w-32 h-32 rounded-full border-4 border-black inline-flex items-center justify-center">
+                Web3
+              </span>
+            </a>
+            <a href="#_" className="relative inline-flex items-center justify-center my-20 ml-10 mr-14 px-3 py-4 font-bold text-black group">
+              <span className="absolute inset-0 w-28 h-28 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
+              <span className="absolute inset-0 w-28 h-28 rounded-full border-4 border-black inline-flex items-center justify-center">
+                Finance
+              </span>
+            </a>
+            <a href="#_" className="relative inline-flex items-center justify-center ml-32 mr-14 mt-12 mb-24 px-10 py-6 font-bold text-black group">
+              <span className="absolute inset-0 w-36 h-36 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
+              <span className="absolute inset-0 w-36 h-36 rounded-full border-4 border-black inline-flex items-center justify-center">
+                AI
+              </span>
+            </a>
+            <a href="#_" className="relative inline-flex items-center justify-center ml-32 mr-14 mt-20 mb-24 px-8 py-6 font-bold text-black group">
+              <span className="absolute inset-0 w-24 h-24 rounded-full transition duration-300 ease-out transform -translate-x-4 -translate-y-4 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
+              <span className="absolute inset-0 w-24 h-24 rounded-full border-4 border-black inline-flex items-center justify-center">
+              Startup
+              </span>
+            </a>
+            <a href="#_" className="relative inline-flex items-center justify-center ml-32 mr-14 mt-12 mb-24 px-10 py-6 font-bold text-black group">
+              <span className="absolute inset-0 w-48 h-48 rounded-full transition duration-300 ease-out transform -translate-x-6 -translate-y-6 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
+              <span className="absolute inset-0 w-48 h-48 rounded-full border-4 border-black inline-flex items-center justify-center">
+              Star Corporation
+              </span>
+            </a>
+          </div>
+        </div>
+      )
 
     const available_jds = display?.JDScoresSet;
     const ExceptionMsg  = display?.ExceptionMsg;
