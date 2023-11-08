@@ -7,40 +7,60 @@ import { JDScoresSet, SearchForJDResponse } from './types/JDResponse'
 
 export default function Display() {
     const { isInteration, display } = useGlobalState();
+    const [ FocusedWeb3, setFocusWeb3 ] = useState(false);
+    const [ FocusedFinance, setFocusFinance ] = useState(false);
+    const [ FocusedAI, setFocusAI ] = useState(false);
+    const [ FocusedStartup, setFocusStartup ] = useState(false);
+    const [ FocusedStarCorporation, setFocusStarCorporation ] = useState(false);
 
     if ( isInteration || display == null )
       return (
         <div id='origin' className='mx-auto max-w-3xl mt-0 h-full min-h-[50vh]'>
           <div className='flex flex-wrap'>
             <a href="#_" className="relative inline-flex items-center justify-center my-24 mx-20 px-8 py-6 font-bold text-black group">
-              <span className="absolute inset-0 w-32 h-32 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
-              <span className="absolute inset-0 w-32 h-32 rounded-full border-4 border-black inline-flex items-center justify-center">
+              <span className={`absolute inset-0 w-32 h-32 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 ${FocusedWeb3?'translate-x-0 translate-y-0':''}`}></span>
+              <button 
+                className="absolute inset-0 w-32 h-32 rounded-full border-4 border-black inline-flex items-center justify-center"
+                onClick={() => setFocusWeb3(!FocusedWeb3)}
+                >
                 Web3
-              </span>
+              </button>
             </a>
             <a href="#_" className="relative inline-flex items-center justify-center my-20 ml-10 mr-14 px-3 py-4 font-bold text-black group">
-              <span className="absolute inset-0 w-28 h-28 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
-              <span className="absolute inset-0 w-28 h-28 rounded-full border-4 border-black inline-flex items-center justify-center">
+              <span className={`absolute inset-0 w-28 h-28 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 ${FocusedFinance?'translate-x-0 translate-y-0':''}`}></span>
+              <button 
+                className="absolute inset-0 w-28 h-28 rounded-full border-4 border-black inline-flex items-center justify-center"
+                onClick={() => setFocusFinance(!FocusedFinance)}
+              >
                 Finance
-              </span>
+              </button>
             </a>
             <a href="#_" className="relative inline-flex items-center justify-center ml-32 mr-14 mt-12 mb-24 px-10 py-6 font-bold text-black group">
-              <span className="absolute inset-0 w-36 h-36 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
-              <span className="absolute inset-0 w-36 h-36 rounded-full border-4 border-black inline-flex items-center justify-center">
+              <span className={`absolute inset-0 w-36 h-36 rounded-full transition duration-300 ease-out transform -translate-x-5 -translate-y-5 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 ${FocusedAI?'translate-x-0 translate-y-0':''}`}></span>
+              <button 
+                className="absolute inset-0 w-36 h-36 rounded-full border-4 border-black inline-flex items-center justify-center"
+                onClick={() => setFocusAI(!FocusedAI)}
+                >
                 AI
-              </span>
+              </button>
             </a>
             <a href="#_" className="relative inline-flex items-center justify-center ml-32 mr-14 mt-20 mb-24 px-8 py-6 font-bold text-black group">
-              <span className="absolute inset-0 w-24 h-24 rounded-full transition duration-300 ease-out transform -translate-x-4 -translate-y-4 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
-              <span className="absolute inset-0 w-24 h-24 rounded-full border-4 border-black inline-flex items-center justify-center">
+              <span className={`absolute inset-0 w-24 h-24 rounded-full transition duration-300 ease-out transform -translate-x-4 -translate-y-4 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 ${FocusedStartup?'translate-x-0 translate-y-0':''}`}></span>
+              <button 
+              className="absolute inset-0 w-24 h-24 rounded-full border-4 border-black inline-flex items-center justify-center"
+              onClick={() => setFocusStartup(!FocusedStartup)}
+              >
               Startup
-              </span>
+              </button>
             </a>
             <a href="#_" className="relative inline-flex items-center justify-center ml-32 mr-14 mt-12 mb-24 px-10 py-6 font-bold text-black group">
-              <span className="absolute inset-0 w-48 h-48 rounded-full transition duration-300 ease-out transform -translate-x-6 -translate-y-6 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 group-focus:translate-x-0 group-focus:translate-y-0"></span>
-              <span className="absolute inset-0 w-48 h-48 rounded-full border-4 border-black inline-flex items-center justify-center">
+              <span className={`absolute inset-0 w-48 h-48 rounded-full transition duration-300 ease-out transform -translate-x-6 -translate-y-6 bg-cyan-400 group-hover:translate-x-0 group-hover:translate-y-0 ${FocusedStarCorporation?'translate-x-0 translate-y-0':''}`}></span>
+              <button 
+                className="absolute inset-0 w-48 h-48 rounded-full border-4 border-black inline-flex items-center justify-center"
+                onClick={() => setFocusStarCorporation(!FocusedStarCorporation)}
+              >
               Star Corporation
-              </span>
+              </button>
             </a>
           </div>
         </div>
