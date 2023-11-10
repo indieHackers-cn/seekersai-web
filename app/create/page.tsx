@@ -46,7 +46,7 @@ export default async function Create() {
           <div className="w-[-webkit-fill-available] px-3 md:mt-8 mt-0">
               <h1 className="mx-auto max-w-3xl font-display text-4xl font-bold tracking-normal sm:text-6xl mb-5 hidden lg:block text-black">
                 get the
-                <span className="text-primary-70 text-cyan-500"> awesome job </span>
+                <span className="text-primary-70 text-cyan-500"> awesome jobs </span>
                 in seconds
               </h1>
               <p className="text-gray-600 hidden lg:block text-lg font-poppins">the available highest score job with your resume within reach</p>
