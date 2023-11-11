@@ -23,7 +23,7 @@ export default async function Navbar() {
             <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
             </Link>
-            <nav className="hidden ml-20 space-x-4 lg:block" id="nav-item">
+            <nav className="hidden mt-1 ml-20 space-x-4 lg:block" id="nav-item">
               {/* 这些将全部更新成新页面 */}
               <Link href="#apps" className={s.link}>
                 App

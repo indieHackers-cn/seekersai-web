@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import Logo from '@/components/icons/Logo';
 import GitHub from '@/components/icons/GitHub';
 import Twitter from '@/components/icons/Twitter';
 
@@ -13,8 +12,8 @@ export default function Footer() {
             href="/"
             className="flex items-center flex-initial font-bold md:mr-24"
           >
-            <span className="mr-2 border rounded-full border-zinc-700">
-              <Logo />
+            <span className="mr-2 border rounded-full border-blue-600">
+              <img src="/favicon.ico" alt="Icon" />
             </span>
             <span>SEEKERSAI</span>
           </Link>

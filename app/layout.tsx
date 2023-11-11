@@ -27,7 +27,7 @@ const poppins = Poppins({
  
 
 const meta = {
-  title: 'seekersai.com',
+  title: 'Home | The place where careers take off',
   description: 'resume accompany me, job will follow me By seekersai.',
   cardImage: '/og.png',
   robots: 'follow, index',
