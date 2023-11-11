@@ -36,6 +36,7 @@ const meta = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(meta.url),
   title: meta.title,
   description: meta.description,
   robots: meta.robots,
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@vercel',
+    site: '@hey2SK',
     title: meta.title,
     description: meta.description,
     images: meta.cardImage
