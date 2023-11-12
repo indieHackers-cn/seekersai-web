@@ -1,4 +1,4 @@
-import ManageSubscriptionButton from './ManageSubscriptionButton';
+import ManageSubBtn from './ManageSubBtn';
 import {
   getSession,
   getUserDetails,
@@ -76,14 +76,14 @@ export default async function Account() {
         </div>
       </div>
       <div className="p-4">
-        <Card
+        {/* <Card
           title="Your Plan"
           description={
             subscription
               ? `You are currently on the ${subscription?.prices?.products?.name} plan.`
               : 'You are not currently subscribed to any plan.'
           }
-          footer={<ManageSubscriptionButton session={session} />}
+          footer={<ManageSubBtn session={session} />}
         >
           <div className="mt-8 mb-4 text-xl font-semibold">
             {subscription ? (
@@ -92,7 +92,7 @@ export default async function Account() {
               <Link href="/">Choose your plan</Link>
             )}
           </div>
-        </Card>
+        </Card> */}
         <Card
           title="Your Name"
           description="Please enter your full name, or a display name you are comfortable with."

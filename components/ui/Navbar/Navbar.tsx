@@ -1,17 +1,17 @@
 import Link from 'next/link';
-import { createServerSupabaseClient } from '@/app/supabase-server';
 
+import { createServerSupabaseClient } from '@/app/supabase-server';
 import Logo from '@/components/icons/Logo';
-import SignOutButton from './SignOutButton';
 
 import s from './Navbar.module.css';
+import Avatar from '@/components/ui/Navbar/avatar';
+
 
 export default async function Navbar() {
   const supabase = createServerSupabaseClient();
   const {
     data: { user }
   } = await supabase.auth.getUser();
-
   return (
     <nav className={s.root}>
       <a href="#skip" className="sr-only focus:not-sr-only">
@@ -41,14 +41,9 @@ export default async function Navbar() {
               )}
             </nav>
           </div>
-          <div className="flex justify-end flex-1 space-x-8">
-              {/* {user && (
-                <Link href="/account" className={s.link}>
-                  Account
-                </Link>
-              )} */}
+          <div className="flex justify-end flex-1">
             {user ? (
-              <SignOutButton />
+              <Avatar user={user} />
             ) : (
               <Link href="/signin">
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
