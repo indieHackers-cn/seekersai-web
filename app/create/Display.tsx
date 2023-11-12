@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { useGlobalState } from './ManageState';
@@ -116,7 +117,7 @@ export default function Display() {
                     {({ active, checked }) => (
                       <>
                         <div className="flex w-full items-center justify-between">
-                          <div className="flex items-center text-right">
+                          <div className="flex items-center text-left">
                             <div className="text-md">
                               <RadioGroup.Label
                                 as="p"
@@ -132,8 +133,11 @@ export default function Display() {
                                   checked ? 'text-red' : 'text-gray-900'
                                 }`}
                               >
-                                <span className='text-right font-bold text-xl'>
-                                    {(available.score * 100).toFixed(2)} 
+                                <span className='text-md font-poppins'>
+                                  score: 
+                                  <span className='font-bold text-xl pl-2'>
+                                      {(available.score * 100).toFixed(2)} 
+                                  </span>
                                 </span>
                                 {/* <span>
                                   {plan.ram}/{plan.cpus}
@@ -145,7 +149,11 @@ export default function Display() {
                           </div>
                           {checked && (
                             <div className="shrink-0 text-white">
+                              <Link
+                                href={`${available.jobUrl}`}
+                               >
                               <CheckIcon className="h-6 w-6" />
+                              </Link>
                             </div>
                           )}
                         </div>
