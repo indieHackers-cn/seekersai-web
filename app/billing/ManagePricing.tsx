@@ -77,7 +77,7 @@ export default function ManagePricing({
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center"></div>
           <p className="text-4xl font-extrabold text-black sm:text-center sm:text-6xl">
-            Reconnecting ...
+            Building ...
           </p>
         </div>
         <LogoCloud />
