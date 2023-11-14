@@ -151,6 +151,7 @@ export default function Display() {
                             <div className="shrink-0 text-white">
                               <Link
                                 href={`${available.jobUrl}`}
+                                target="_blank"
                                >
                               <CheckIcon className="h-6 w-6" />
                               </Link>
